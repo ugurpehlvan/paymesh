@@ -4,5 +4,14 @@
   "workspaces": [
     "services/*",
     "packages/*"
-  ]
+  ],
+  "scripts": {
+    "dev:gateway": "npm run dev -w @paymesh/api-gateway",
+    "dev:user": "npm run dev -w @paymesh/user-service",
+    "dev:wallet": "npm run dev -w @paymesh/wallet-service",
+    "build": "npm run build --workspaces"
+  },
+  "dependencies": {
+    "zod": "^4.4.3"
+  }
 }

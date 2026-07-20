@@ -1,5 +1,5 @@
 {
-  "name": "wallet-service",
+  "name": "@paymesh/wallet-service",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

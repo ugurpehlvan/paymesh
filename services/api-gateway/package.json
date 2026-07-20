@@ -1,5 +1,5 @@
 {
-  "name": "api-gateway",
+  "name": "@paymesh/api-gateway",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
