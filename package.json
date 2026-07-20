@@ -1,0 +1,8 @@
+{
+  "name": "paymesh",
+  "private": true,
+  "workspaces": [
+    "services/*",
+    "packages/*"
+  ]
+}
