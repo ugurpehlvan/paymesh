@@ -1,5 +1,6 @@
 import express from 'express';
 import { v4 as uuidv4 } from 'uuid';
+import { config } from '@paymesh/config';
 
 const app = express();
 app.use(express.json());
@@ -16,6 +17,6 @@ app.get('/health', (req, res) => {
   res.json({ status: 'ok' });
 });
 
-app.listen(3002, () => {
-  console.log('Service running on port 3000');
+app.listen(config.port, () => {
+  console.log(`Wallet service is listening port:${config.port}`);
 });

@@ -19,6 +19,7 @@
     "typescript": "^6.0.3"
   },
   "dependencies": {
+    "@paymesh/config": "*",
     "axios": "^1.16.0",
     "cors": "^2.8.6",
     "express": "^5.2.1",
