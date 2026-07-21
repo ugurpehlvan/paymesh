@@ -1,6 +1,7 @@
 import express from 'express';
 import { v4 as uuidv4 } from 'uuid';
 import { config } from '@paymesh/config';
+import { logger } from "@paymesh/logger";
 
 const app = express();
 app.use(express.json());
@@ -18,5 +19,5 @@ app.get('/health', (req, res) => {
 });
 
 app.listen(config.port, () => {
-  console.log(`Wallet service is listening port:${config.port}`);
+  logger.info("Wallet service started");
 });
